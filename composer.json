@@ -1,0 +1,38 @@
+{
+    "name": "ikoncoders/caremi",
+    "description": "A caremi PHP Project",
+    "keywords": ["framework", "php", "caremi"],
+    "minimum-stability": "dev",
+    "type": "project",
+    "license": "MIT",
+    "readme": "",
+    "time": "",
+    "authors": [
+        {
+            "name": "caremi",
+            "email": "caremi.ltd@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Caremi\\Tests\\": "tests"
+        }
+    },   
+    "require": {
+        
+    },
+    "require-dev": {
+        
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "framework"
+        }
+    ]
+}
