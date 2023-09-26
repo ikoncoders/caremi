@@ -24,9 +24,6 @@
         }
     },   
     "require": {
-        
-    },
-    "require-dev": {
-        
-    } 
+        "ikoncoders/framework": "dev-master"
+    }
 }
