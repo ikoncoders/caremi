@@ -28,11 +28,5 @@
     },
     "require-dev": {
         
-    },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "framework"
-        }
-    ]
+    } 
 }
