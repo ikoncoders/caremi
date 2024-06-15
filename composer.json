@@ -22,7 +22,15 @@
         }
     },
     "require-dev": {
-        "symfony/var-dumper": "7.2.x-dev",
-        "nikic/fast-route": "^2.0@dev"
+        "symfony/var-dumper": "7.2.x-dev"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/ikoncoders/FastRoute.git"
+        }
+    ],
+    "require": {
+        "nikic/fast-route": "dev-hotfix"
     }
 }

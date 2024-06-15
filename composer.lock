@@ -4,20 +4,19 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "01d904b7d93fa98cd809f7817c51d889",
-    "packages": [],
-    "packages-dev": [
+    "content-hash": "c536098651600b41d7e3065e32ecc12f",
+    "packages": [
         {
             "name": "nikic/fast-route",
-            "version": "dev-master",
+            "version": "dev-hotfix",
             "source": {
                 "type": "git",
-                "url": "https://github.com/nikic/FastRoute.git",
+                "url": "https://github.com/ikoncoders/FastRoute.git",
                 "reference": "d3ada013d0f683ad2a8d0614fc97917a6ab72ce9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/FastRoute/zipball/d3ada013d0f683ad2a8d0614fc97917a6ab72ce9",
+                "url": "https://api.github.com/repos/ikoncoders/FastRoute/zipball/d3ada013d0f683ad2a8d0614fc97917a6ab72ce9",
                 "reference": "d3ada013d0f683ad2a8d0614fc97917a6ab72ce9",
                 "shasum": ""
             },
@@ -35,7 +34,6 @@
                 "phpstan/phpstan-strict-rules": "^1.5",
                 "phpunit/phpunit": "^10.3"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -43,14 +41,19 @@
                 }
             },
             "autoload": {
-                "files": [
-                    "src/functions.php"
-                ],
                 "psr-4": {
                     "FastRoute\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "FastRoute\\Benchmark\\": "benchmark/",
+                    "FastRoute\\Test\\": "test/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -66,8 +69,7 @@
                 "routing"
             ],
             "support": {
-                "issues": "https://github.com/nikic/FastRoute/issues",
-                "source": "https://github.com/nikic/FastRoute/tree/2.0.0-beta1"
+                "source": "https://github.com/ikoncoders/FastRoute/tree/hotfix"
             },
             "time": "2024-03-04T23:46:43+00:00"
         },
@@ -122,7 +124,9 @@
                 "source": "https://github.com/php-fig/simple-cache/tree/master"
             },
             "time": "2022-04-08T16:41:45+00:00"
-        },
+        }
+    ],
+    "packages-dev": [
         {
             "name": "symfony/polyfill-mbstring",
             "version": "1.x-dev",
@@ -291,6 +295,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "nikic/fast-route": 20,
         "symfony/var-dumper": 20
     },
     "prefer-stable": false,
